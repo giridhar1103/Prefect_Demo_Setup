@@ -64,7 +64,29 @@ To start your server:
 ```bash
 prefect server start --host 0.0.0.0
 ```
+This will start the server and will look like this:
 
+********************* INSWERT IMG ********************
 
+In another terminal, run this command so that it can point to your api:
+```bash
+prefect config set PREFECT_API_URL="http://<your_ip_add>:4200/api"
+```
 
+### Start prefect workers
+
+Let's first create a work pool. Work pools connect the server's scheduler to where runs actually execute.
+
+```bash
+prefect work-pool create <Your_pool_name> --type process
+
+prefect work-pool ls
+```
+
+To start running this created worker:
+```bash
+prefect worker start --pool <Your_pool_name>
+```
+You will get a message whih says that your worker pool is running as seen below:
+*****************************INSWERERT IMAGE********************
 
