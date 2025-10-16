@@ -27,3 +27,15 @@ OS/Arch:             linux/x86_64
 Profile:             default
 Server type:         server
 ```
+
+Before we install, let's create a python3 venv:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Now install prefect:
+```bash
+pip install "prefect>=2.14,<3"
+```
+
