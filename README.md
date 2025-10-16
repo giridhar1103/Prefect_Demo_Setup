@@ -39,3 +39,11 @@ Now install prefect:
 pip install "prefect>=2.14,<3"
 ```
 
+After you're done setting up prefect on your ec2, go to prefect.io and create a free account on it. Next, scroll down to the API-Keys section on the website and create a pair of api keys. 
+
+Go back to your ec2 instance and enter this command:
+```bash
+prefect cloud login
+```
+It will ask you for the API keys so enter the api keys and you will be logged in through your account.
+
