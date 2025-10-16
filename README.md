@@ -55,4 +55,16 @@ echo 'export PREFECT_SERVER_DATABASE_TIMEOUT=30' >> ~/.bashrc
 
 source ~/.bashrc
 ```
+At this point the whole setupt is done and you're ready to launch the server.
+
+### Start your prefect server
+We will be needing multiple ssh terminal. One for the server, one for the worker and another for working on the file system.
+
+To start your server:
+```bash
+prefect server start --host 0.0.0.0
+```
+
+
+
 
