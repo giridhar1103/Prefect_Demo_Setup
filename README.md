@@ -47,3 +47,12 @@ prefect cloud login
 ```
 It will ask you for the API keys so enter the api keys and you will be logged in through your account.
 
+In the same environment, change these wait times for Database timeouts for sqlite(execute in order):
+```bash
+echo 'export PREFECT_SERVER_DATABASE_CONNECTION_TIMEOUT=30' >> ~/.bashrc
+
+echo 'export PREFECT_SERVER_DATABASE_TIMEOUT=30' >> ~/.bashrc
+
+source ~/.bashrc
+```
+
