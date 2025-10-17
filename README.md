@@ -87,6 +87,6 @@ To start running this created worker:
 ```bash
 prefect worker start --pool <Your_pool_name>
 ```
-You will get a message whih says that your worker pool is running as seen below:
+
 ![Alt text](Images/Worker.JPG)
 
