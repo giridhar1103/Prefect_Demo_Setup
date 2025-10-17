@@ -105,6 +105,9 @@ pkill -f "prefect worker"
 pkill -f "prefect server"
 ```
 
+### Running test scripts to understand scheduling
+
+
 ```python
 from datetime import datetime, UTC
 from prefect import flow, task
