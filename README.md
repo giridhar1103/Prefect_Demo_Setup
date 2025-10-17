@@ -90,6 +90,20 @@ prefect worker start --pool <Your_pool_name>
 
 ![Alt text](Images/Worker.JPG)
 
+### Troubleshooting server and workers
+Sometimes we might run two sessions of our prefect server or workers. To handle this, we can check if a process is already running by running these commands:
+```bash
+pgrep -fl "prefect worker"
+
+pgrep -fl "prefect server"
+```
+
+Later if it shows that a proccess is running on the instance, we can clear it so that we can start all over again by running the commands respectively:
+```bash
+pkill -f "prefect worker"
+
+pkill -f "prefect server"
+```
 
 ```python
 from datetime import datetime, UTC
