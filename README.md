@@ -66,7 +66,7 @@ prefect server start --host 0.0.0.0
 ```
 This will start the server and will look like this:
 
-********************* INSWERT IMG ********************
+[]
 
 In another terminal, run this command so that it can point to your api:
 ```bash
@@ -88,5 +88,5 @@ To start running this created worker:
 prefect worker start --pool <Your_pool_name>
 ```
 You will get a message whih says that your worker pool is running as seen below:
-*****************************INSWERERT IMAGE********************
+![Alt text](Imgages/Worker)
 
