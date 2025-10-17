@@ -107,7 +107,9 @@ pkill -f "prefect server"
 
 ### Running test scripts to understand scheduling
 
+Let's run a sample script that extracts the current date & time once it's run. Then later we will be scheduling these runs so that it runs for an interval that is benificial for us.
 
+####Script:
 ```python
 from datetime import datetime, UTC
 from prefect import flow, task
@@ -118,9 +120,9 @@ def fetch_data():
     return "ok"
 
 @flow(log_prints=True)
-def gharchive_flow():
+def prefect_flow():
     fetch_data()
 
 if __name__ == "__main__":
-    gharchive_flow()
+    prefect_flow()
 ```
