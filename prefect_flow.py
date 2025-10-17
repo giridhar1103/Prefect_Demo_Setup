@@ -7,8 +7,8 @@ def fetch_data():
     return "ok"
 
 @flow(log_prints=True)
-def gharchive_flow():
+def prefect_flow():
     fetch_data()
 
 if __name__ == "__main__":
-    gharchive_flow()
+    prefect_flow()
