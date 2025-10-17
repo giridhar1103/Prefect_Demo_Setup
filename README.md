@@ -109,7 +109,7 @@ pkill -f "prefect server"
 
 Let's run a sample script that extracts the current date & time once it's run. Then later we will be scheduling these runs so that it runs for an interval that is benificial for us.
 
-####Script:
+Script:
 ```python
 from datetime import datetime, UTC
 from prefect import flow, task
