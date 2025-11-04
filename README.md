@@ -108,6 +108,10 @@ pkill -f "prefect server"
 ### Running test scripts to understand scheduling
 
 Let's run a sample script that extracts the current date & time once it's run. Then later we will be scheduling these runs so that it runs for an interval that is benificial for us.
+```bash
+prefect init
+```
+After running this command, it will create prefect.yaml for us. We need to edit this .yaml file for a minimal setup.
 
 Script:
 ```python
@@ -128,10 +132,7 @@ if __name__ == "__main__":
 ```
 Now to schedule tasks, we need to deploy. And then after that we can schedule tasks from the UI of prefect that runs at the <your_ip_address>:4200// endpoint.
 
-```bash
-prefect init
-```
-After running this command, it will create prefect.yaml for us. We need to edit this .yaml file for a minimal setup.
+
 
 ```bash
 name: gharchive-project
