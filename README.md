@@ -131,4 +131,25 @@ Now to schedule tasks, we need to deploy. And then after that we can schedule ta
 ```bash
 prefect init
 ```
-After running this command, it will create prefect.yaml for us. We need to edit this .yaml file to
+After running this command, it will create prefect.yaml for us. We need to edit this .yaml file for a minimal setup.
+
+```bash
+name: gharchive-project
+prefect-version: null
+
+# No build/push/pull needed when code and worker live on same box.
+
+deployments:
+  - name: gharchive-hourly
+    description: your_Description
+    entrypoint: your_file.py:<entry_point>
+    work_pool:
+      name: your_work_pool_name          
+      work_queue_name: default
+      job_variables: {}             
+    schedules:
+      - cron: "0 * * * *"           
+        timezone: "UTC"
+        active: true
+
+```
