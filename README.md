@@ -139,7 +139,7 @@ prefect-version: null
 
 
 deployments:
-  - name: gharchive-hourly
+  - name: your_name
     description: your_Description
     entrypoint: your_file.py:<entry_point>
     work_pool:
@@ -151,4 +151,9 @@ deployments:
         timezone: "UTC"
         active: true
 
+```
+
+Next, to deploy, we need to run this command:
+```bash
+prefect deploy --name gharchive-hourly --skip-prompt
 ```
