@@ -139,7 +139,7 @@ prefect-version: null
 
 
 deployments:
-  - name: your_name
+  - name: your_deployment_name
     description: your_Description
     entrypoint: your_file.py:<entry_point>
     work_pool:
@@ -155,5 +155,13 @@ deployments:
 
 Next, to deploy, we need to run this command:
 ```bash
-prefect deploy --name gharchive-hourly --skip-prompt
+prefect deploy --name your_deployment_name --skip-prompt
+```
+
+Next make sure your worker is up and running. 
+
+For a manual test run to see if we can successfully run the deployement, run this:
+
+```bash
+prefect deployment run "your_def_flow_name/deployment_name"
 ```
