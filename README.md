@@ -137,7 +137,6 @@ After running this command, it will create prefect.yaml for us. We need to edit 
 name: gharchive-project
 prefect-version: null
 
-# No build/push/pull needed when code and worker live on same box.
 
 deployments:
   - name: gharchive-hourly
