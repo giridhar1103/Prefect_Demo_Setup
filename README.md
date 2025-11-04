@@ -126,4 +126,4 @@ def prefect_flow():
 if __name__ == "__main__":
     prefect_flow()
 ```
-Now to schedule tasks, we need to deploy. And then after that we can schedule tasks from the UI of prefect that runs at the localhost://
+Now to schedule tasks, we need to deploy. And then after that we can schedule tasks from the UI of prefect that runs at the <your_ip_address>://
