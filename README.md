@@ -128,4 +128,7 @@ if __name__ == "__main__":
 ```
 Now to schedule tasks, we need to deploy. And then after that we can schedule tasks from the UI of prefect that runs at the <your_ip_address>:4200// endpoint.
 
-
+```bash
+prefect init
+```
+After running this command, it will create prefect.yaml for us. We need to edit this .yaml file to
